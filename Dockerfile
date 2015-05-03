@@ -1,4 +1,4 @@
-FROM nodejs
+FROM node
 ADD . /src
 RUN cd /src; npm install
 EXPOSE 8080
