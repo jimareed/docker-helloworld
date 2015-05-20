@@ -6,7 +6,7 @@ app.get('/', function (req, res) {
   res.send('Hello World\n');
 });
 app.get('/version', function (req, res) {
-  res.send('1.3\n');
+  res.send('1.4\n');
 });
 app.listen(PORT)
 console.log('Running on http://localhost:' + PORT);
