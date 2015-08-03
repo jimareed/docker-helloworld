@@ -3,7 +3,7 @@ var DEFAULT_PORT = 8080;
 var PORT = process.env.PORT || DEFAULT_PORT;
 var app = express();
 app.get(['/', '/docker-helloworld'], function (req, res) {
-  res.send('Hello World\n');
+  res.send('<html><body><b>Hello World!</b></body></html>\n');
 });
 app.get('/version', function (req, res) {
   res.send('1.5\n');
