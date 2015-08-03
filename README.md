@@ -1,11 +1,12 @@
-# helloworld
+# docker-helloworld
 
+simple docker container example.
 
 ## run container
 
 ```
-docker pull jimareed/helloworld
 docker run --name helloworld -d -p 8080:8080 jimareed/helloworld
 docker ps
-docker stop <name>
+curl localhost:8080 (returns 'Hello World')
+docker stop helloworld
 ```
